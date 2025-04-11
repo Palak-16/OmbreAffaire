@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - ombreAffaire{% endblock %}
+
+{% block content %}
+<div class="hero-section text-center d-flex align-items-center justify-content-center" style="height: 70vh; background: linear-gradient(to bottom, #F5ECE1, #C8B6A6); color: #1D1D1B;">
+    <div>
+        <h1 class="fw-bold">Welcome to ombreAffaire</h1>
+        <p class="lead">Explore the latest fashion trends with elegance</p>
+        <a href="#collections" class="btn btn-ombre mt-3">Shop Now</a>
+    </div>
+</div>
+<!-- Shop by Category Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Shop by Category</h2>
+
+    <!-- Desktop View (Grid) -->
+    <div class="d-none d-md-block">
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="category-card position-relative overflow-hidden rounded">
+                    <img src="{% static 'images/category1.jpg' %}" class="img-fluid w-100 h-100" alt="Women's Collection">
+                    <div class="category-overlay">
+                        <h4 class="text-white">Women</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-card position-relative overflow-hidden rounded">
+                    <img src="{% static 'images/category2.webp' %}" class="img-fluid w-100 h-100" alt="Men's Collection">
+                    <div class="category-overlay">
+                        <h4 class="text-white">Men</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-card position-relative overflow-hidden rounded">
+                    <img src="{% static 'images/category3.webp' %}" class="img-fluid w-100 h-100" alt="Accessories">
+                    <div class="category-overlay">
+                        <h4 class="text-white">Accessories</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile View (Carousel) -->
+    <div id="categoryCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="text-center">
+                    <img src="{% static 'images/category1.jpg' %}" class="img-fluid rounded" alt="Women's Collection">
+                    <h4 class="mt-2">Women</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="text-center">
+                    <img src="{% static 'images/category2.webp' %}" class="img-fluid rounded" alt="Men's Collection">
+                    <h4 class="mt-2">Men</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="text-center">
+                    <img src="{% static 'images/category3.webp' %}" class="img-fluid rounded" alt="Accessories">
+                    <h4 class="mt-2">Accessories</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+
+
+<hr class="my-5">
+
+<!-- New Arrivals -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">New Arrivals</h2>
+    <div class="row g-4">
+        <div class="col-md-6 col-lg-3 text-center">
+            <img src="https://via.placeholder.com/250" class="img-fluid rounded shadow" alt="New Arrival 1">
+            <p class="mt-2">Product Name</p>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center">
+            <img src="https://via.placeholder.com/250" class="img-fluid rounded shadow" alt="New Arrival 2">
+            <p class="mt-2">Product Name</p>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center">
+            <img src="https://via.placeholder.com/250" class="img-fluid rounded shadow" alt="New Arrival 3">
+            <p class="mt-2">Product Name</p>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center">
+            <img src="https://via.placeholder.com/250" class="img-fluid rounded shadow" alt="New Arrival 4">
+            <p class="mt-2">Product Name</p>
+        </div>
+    </div>
+</div>
+
+<hr class="my-5">
+
+<!-- Trending Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Trending Now</h2>
+    <div class="row g-4">
+        <div class="col-md-6 col-lg-3 text-center">
+            <div class="trend-card p-3 shadow rounded">
+                <img src="https://via.placeholder.com/250" class="img-fluid rounded" alt="Trending 1">
+                <p class="mt-2">Product Name</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center">
+            <div class="trend-card p-3 shadow rounded">
+                <img src="https://via.placeholder.com/250" class="img-fluid rounded" alt="Trending 2">
+                <p class="mt-2">Product Name</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center">
+            <div class="trend-card p-3 shadow rounded">
+                <img src="https://via.placeholder.com/250" class="img-fluid rounded" alt="Trending 3">
+                <p class="mt-2">Product Name</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center">
+            <div class="trend-card p-3 shadow rounded">
+                <img src="https://via.placeholder.com/250" class="img-fluid rounded" alt="Trending 4">
+                <p class="mt-2">Product Name</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="my-5">
+
+<!-- Customer Reviews -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">What Our Customers Say</h2>
+    <div class="row">
+        <div class="col-md-4 text-center p-3 shadow rounded">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>"Amazing quality and fast delivery!"</p>
+        </div>
+        <div class="col-md-4 text-center p-3 shadow rounded">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>"Absolutely love their collection!"</p>
+        </div>
+        <div class="col-md-4 text-center p-3 shadow rounded">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>"Best shopping experience ever!"</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer positioned at end of page -->
+<div style="margin-bottom: 100px;"></div>
+
+{% endblock %}

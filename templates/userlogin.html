@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Login - ombreAffairs{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card p-4 shadow-lg" style="width: 100%; max-width: 400px; background: #F5ECE1; border-radius: 10px;">
+        <h2 class="text-center mb-4" style="color: #1D1D1B;">Login</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="username" class="form-label">Username or Email</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-ombre w-100">Login</button>
+        </form>
+        <p class="text-center mt-3">Don't have an account? <a href="{% url 'signup' %}" style="color: #A58C74;">Sign Up</a></p>
+        <p class="text-center"><a href="#" style="color: #A58C74;">Forgot Password?</a></p>
+    </div>
+</div>
+{% endblock %}

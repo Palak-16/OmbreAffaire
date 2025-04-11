@@ -1,0 +1,524 @@
+/* General Styles */
+:root {
+    --primary-color: #333;
+    --secondary-color: #BEB4A9;
+    --accent-color: #F5F1EE;
+    --text-color: #333;
+    --light-beige: #F8F6F4;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-beige);
+}
+
+
+
+.navbar {
+    padding: 0.7rem 0;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.navbar .dropdown-menu {
+    min-width: 120px;
+    text-align: center;
+}
+.navbar .dropdown-toggle {
+    white-space: nowrap;
+}
+
+
+.navbar-brand img {
+    height: 40px;
+}
+
+
+.nav-link {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 1.3rem;
+    color: var(--text-color) !important;
+    transition: color 0.3s ease;
+    padding: 0 !important;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.cart-count {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    margin-left: 0.2rem;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(245, 241, 238, 0.9), rgba(245, 241, 238, 0.9)), url('https://placehold.co/1920x1080') center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    color: var(--primary-color);
+}
+
+/* Collection Banner */
+.collection-banner {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 3rem 0;
+}
+
+/* Product Cards */
+.product-card {
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.product-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.product-card img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card .price {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Category Cards */
+.category-card {
+    position: relative;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.category-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    color: white;
+    text-align: center;
+}
+
+/* Featured Section */
+.featured-section {
+    background-color: var(--accent-color);
+    padding: 5rem 0;
+}
+
+.featured-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-image img {
+    transition: transform 0.3s ease;
+}
+
+.featured-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Instagram Feed */
+.instagram-feed {
+    padding: 4rem 0;
+}
+
+.instagram-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.instagram-item img {
+    transition: transform 0.3s ease;
+}
+
+.instagram-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: var(--accent-color);
+    padding: 5rem 0;
+}
+
+.newsletter-form .form-control {
+    border-radius: 0;
+    border: 1px solid var(--secondary-color);
+    padding: 0.8rem 1.2rem;
+}
+
+.newsletter-form .btn {
+    border-radius: 0;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    padding: 0.8rem 2rem;
+}
+
+.newsletter-form .btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* About Section */
+.about-section {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.about-image {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Size Guide */
+.size-guide {
+    padding: 4rem 0;
+    background-color: var(--light-beige);
+}
+
+.size-table {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.9rem;
+    padding: 5rem 0 2rem;
+}
+
+footer h5 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+.social-links a {
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 0.8rem 2rem;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+}
+
+/* Notification */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 4px;
+    z-index: 1000;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+    .nav-link {
+        margin: 0.5rem 0;
+    }
+
+    .collection-banner {
+        text-align: center;
+    }
+
+    .about-section {
+        text-align: center;
+    }
+}
+
+
+.btn:hover {
+    background-color: #3b241c !important;
+  }
+  
+  input::placeholder {
+    font-style: italic;
+    color: #bbb;
+  }
+
+ /* Common Form Styles */
+.auth-modal .modal-dialog {
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.auth-modal .modal-content {
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: var(--light-beige);
+}
+
+.auth-header {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Phone Number Input */
+.phone-input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    background: white;
+    transition: 0.3s;
+}
+
+.phone-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* OTP Input */
+.otp-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.otp-input {
+    width: 45px;
+    height: 50px;
+    font-size: 1.4rem;
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.otp-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Name & Email Input (Only for New Users) */
+.user-details {
+    margin-top: 1rem;
+}
+
+.user-details input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    background: white;
+    margin-bottom: 0.8rem;
+    transition: 0.3s;
+}
+
+.user-details input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Buttons */
+.auth-btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-btn:hover {
+    background-color: var(--primary-color);
+}
+
+.resend-otp {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.resend-otp a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resend-otp a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-modal .modal-dialog {
+        max-width: 90%;
+    }
+
+    .otp-input {
+        width: 40px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Adjust modal width for tablet view */
+@media (max-width: 992px) {
+    .auth-modal .modal-dialog {
+        max-width: 90%; /* Ensure it fits within screen */
+        padding: 1rem;
+    }
+
+    .signup-left {
+        display: none; /* Hide image on tablets */
+    }
+
+    .auth-header {
+        font-size: 1.2rem;
+    }
+
+    .auth-btn {
+        padding: 0.6rem; /* Adjust button size */
+    }
+}
+
+/* Ensure form fields have proper spacing */
+.auth-modal .form-control {
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+/* Style the login/signup toggle */
+/* Custom Styling for Signup/Login Toggle */
+/* Custom Styling for Signup/Login Toggle */
+/* Override Bootstrap's Default Nav-Pills */
+/* Completely remove Bootstrap's default pills styling */
+/* Remove Bootstrap's default active styles */
+.auth-modal .nav-pills .nav-link {
+    --bs-nav-pills-link-active-bg: none !important;
+    --bs-nav-pills-link-active-color: inherit !important;
+}
+
+/* Custom Styling for Login/Signup Toggle */
+.auth-modal .nav-pills .nav-link {
+    background-color: #FDF8F1 !important;  /* Light beige background */
+    color: #4E342E !important;  /* Dark text */
+    border-radius: 0 !important;
+    padding: 10px 20px !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease !important;
+    border: 1px solid #BEB4A9 !important; /* Add subtle border */
+}
+
+/* Active tab styling */
+.auth-modal .nav-pills .nav-link.active {
+    background-color: #BEB4A9 !important; /* Beige highlight for active tab */
+    color: white !important;
+}
+
+
+
+/* Ensure form fields align properly */
+.auth-modal .modal-body {
+    padding: 1.5rem;
+}
+
+/* Reduce spacing issues inside modal */
+.auth-modal .form-control {
+    margin-bottom: 10px;
+}
+
+/* Make sure modal buttons align correctly */
+.auth-btn {
+    margin-top: 10px;
+}

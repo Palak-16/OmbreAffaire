@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Sign Up - ombreAffairs{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 85vh;">
+    <div class="p-4 shadow-sm" style="background: #FDF8F1; border-radius: 10px; max-width: 380px; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+        <h3 class="text-center mb-3" style="color: #1D1D1B; font-weight: 600;">Create Your Account</h3>
+        <form method="POST" novalidate style="font-size: 0.95rem;">
+            {% csrf_token %}
+            <div class="mb-2">
+                <label for="fullname" class="form-label">Full Name</label>
+                <input type="text" class="form-control form-control-sm" id="fullname" name="fullname" placeholder="John Doe" required>
+            </div>
+            <div class="mb-2">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control form-control-sm" id="username" name="username" placeholder="johndoe123" required>
+            </div>
+            <div class="mb-2">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="example@email.com" required>
+            </div>
+            <div class="mb-2">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control form-control-sm" id="phone" name="phone" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="mb-2">
+                <label for="password1" class="form-label">Password</label>
+                <input type="password" class="form-control form-control-sm" id="password1" name="password1" required>
+            </div>
+            <div class="mb-3">
+                <label for="password2" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control form-control-sm" id="password2" name="password2" required>
+            </div>
+            <button type="submit" class="btn w-100" style="background-color: #4E342E; color: white; font-size: 0.9rem;">Sign Up</button>
+        </form>
+        <p class="text-center mt-3 mb-0" style="font-size: 0.85rem;">Already have an account?
+            <a href="{% url 'userlogin' %}" style="color: #A58C74;">Login</a>
+        </p>
+    </div>
+</div>
+{% endblock %}

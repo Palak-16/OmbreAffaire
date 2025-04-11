@@ -1,0 +1,306 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - ombreAffaire{% endblock %}
+
+{% block content %}
+<body>
+  
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold">Elegance in Every Shade</h1>
+                    <p class="lead">Discover our new collection of sophisticated and timeless pieces.</p>
+                    <a href="#new-arrivals" class="btn btn-primary">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Banner -->
+    <section class="collection-banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2>Summer Collection 2025</h2>
+                    <p class="lead mb-0">Explore our latest summer styles</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <a href="#" class="btn btn-outline-light">View Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section id="new-arrivals" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">New Arrivals</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="https://picsum.photos/300/400" alt="Product" class="img-fluid">
+                        <div class="product-info">
+                            <h3>Elegant Dress</h3>
+                            <p class="price">$199.99</p>
+                            <button class="btn btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other products -->
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="https://picsum.photos/300/400" alt="Product" class="img-fluid">
+                        <div class="product-info">
+                            <h3>Summer Blouse</h3>
+                            <p class="price">$89.99</p>
+                            <button class="btn btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="https://picsum.photos/300/400" alt="Product" class="img-fluid">
+                        <div class="product-info">
+                            <h3>Floral Skirt</h3>
+                            <p class="price">$129.99</p>
+                            <button class="btn btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="https://picsum.photos/300/400" alt="Product" class="img-fluid">
+                        <div class="product-info">
+                            <h3>Classic Pants</h3>
+                            <p class="price">$149.99</p>
+                            <button class="btn btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="featured-image">
+                        <img src="https://picsum.photos/600/800" alt="Featured" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-1">
+                    <h2 class="mb-4">The Perfect Blend of Style & Comfort</h2>
+                    <p class="lead mb-4">Discover our handpicked collection that combines elegance with everyday comfort.</p>
+                    <a href="#" class="btn btn-primary">Shop the Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Shop by Category</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <img src="https://placehold.co/400x500" alt="Dresses" class="img-fluid">
+                        <div class="category-info">
+                            <h3>Dresses</h3>
+                            <a href="#" class="btn btn-outline-light">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <img src="https://placehold.co/400x500" alt="Tops" class="img-fluid">
+                        <div class="category-info">
+                            <h3>Tops</h3>
+                            <a href="#" class="btn btn-outline-light">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <img src="https://placehold.co/400x500" alt="Accessories" class="img-fluid">
+                        <div class="category-info">
+                            <h3>Accessories</h3>
+                            <a href="#" class="btn btn-outline-light">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram-feed">
+        <div class="container">
+            <h2 class="text-center mb-5">Follow Us on Instagram</h2>
+            <div class="row g-2">
+                <div class="col-md-3 col-6">
+                    <div class="instagram-item">
+                        <img src="https://placehold.co/300x300" alt="Instagram" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="instagram-item">
+                        <img src="https://placehold.co/300x300" alt="Instagram" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="instagram-item">
+                        <img src="https://placehold.co/300x300" alt="Instagram" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="instagram-item">
+                        <img src="https://placehold.co/300x300" alt="Instagram" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary">@ombreaffaire</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Our Story</h2>
+                    <p class="lead">OmbreAffaire was born from a passion for elegant fashion that transcends seasons.</p>
+                    <p>We believe in creating timeless pieces that blend sophistication with modern style, ensuring every woman feels confident and beautiful.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-image">
+                        <img src="https://placehold.co/600x400" alt="About Us" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Size Guide -->
+    <section class="size-guide">
+        <div class="container">
+            <h2 class="text-center mb-5">Size Guide</h2>
+            <div class="table-responsive">
+                <table class="table size-table">
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>Bust (cm)</th>
+                            <th>Waist (cm)</th>
+                            <th>Hip (cm)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>XS</td>
+                            <td>82-85</td>
+                            <td>63-66</td>
+                            <td>89-92</td>
+                        </tr>
+                        <tr>
+                            <td>S</td>
+                            <td>86-89</td>
+                            <td>67-70</td>
+                            <td>93-96</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>90-93</td>
+                            <td>71-74</td>
+                            <td>97-100</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>94-97</td>
+                            <td>75-78</td>
+                            <td>101-104</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Stay updated with our latest collections and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <p>OmbreAffaire is your destination for elegant and timeless fashion pieces.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <h5 class="mt-4">Payment Methods</h5>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 OmbreAffaire. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+{% endblock %}
